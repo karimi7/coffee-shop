@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Dana';
+    src: url('/public/fonts/dana/Dana-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Dana Meduim';
+    src: url('/public/fonts/dana/Dana-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Dana DemiBold';
+    src: url('/public/fonts/dana/Dana-DemiBold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Morabba Light';
+    src: url('/public/fonts/morabba/Morabba-Light.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Morabba Medium';
+    src: url('/public/fonts/morabba/Morabba-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Morabba Bold';
+    src: url('/public/fonts/morabba/Morabba-Bold.woff2') format('woff2');
+}
+
+@import "tailwindcss";
+
+@theme {
+    --color-brown-100: #ECE0D1;
+    --color-brown-300: #DBC1AC;
+    --color-brown-600: #967259;
+    --color-brown-900: #634832;
+    --shadow-normal: 0px 1px 10px rgba(0,0,0,0.05);
+    --radius-4xl: 2rem;
+    --font-Dana: 'Dana';
+    --font-DanaMedium: 'Dana Meduim';
+    --font-DanaDemiBold: 'Dana DemiBold';
+    --font-MorabbaLight: 'Morabba Light';
+    --font-MorabbaMedium: 'Morabba Medium';
+    --font-MorabbaBold: 'Morabba Bold';
+}
