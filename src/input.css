@@ -25,6 +25,11 @@
 
 @import "tailwindcss";
 
+@utility container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @theme {
     --color-brown-100: #ECE0D1;
     --color-brown-300: #DBC1AC;
@@ -38,4 +43,13 @@
     --font-MorabbaLight: 'Morabba Light';
     --font-MorabbaMedium: 'Morabba Medium';
     --font-MorabbaBold: 'Morabba Bold';
+    --tracking-tightest: -0.065em;
 }
+
+body{
+    background-image: url('/public/CoffeeShop-Files/headerBgDesktop.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
