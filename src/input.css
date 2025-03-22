@@ -53,3 +53,10 @@ body{
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* FA Number */
+.ss02 {
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+}
