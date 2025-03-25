@@ -28,17 +28,17 @@
           </symbol>
     </svg>
 
-    <header class="bg-black/50 w-[90%] h-24 mx-auto rounded-3xl fixed top-9 right-0 left-0 flex items-center px-10 py-5 backdrop-blur-[6px]">
+    <header class="bg-black/50 w-[90%] max-lg:w-[98%] h-24 mx-auto rounded-3xl fixed top-9 right-0 left-0 flex max-md:hidden items-center px-10 max-lg:px-5 py-5 backdrop-blur-[6px]">
 
         <div class="w-full flex justify-between">
                     <!-- Logo & Menu -->
-        <nav class="flex items-center gap-9 h-14">
+        <nav class="flex items-center gap-9 max-lg:gap-x-6 h-14">
             <!-- Logo -->
-            <div>
+            <div class="shrink-0">
                 <img src="./CoffeeShop-Files/app-logo.png" alt="logo">
             </div>
             <!-- Menu -->
-                <ul class="flex gap-x-9 h-full *:h-full items-center text-xl text-gray-300 tracking-tightest *:leading-14 *:hover:text-orange-300 *:transition ">
+                <ul class="flex gap-x-9 max-lg:gap-x-5 h-full *:h-full items-center text-xl text-gray-300 tracking-tightest *:leading-14 *:hover:text-orange-300 *:transition ">
                     <li class="font-DanaMedium text-orange-200"><a href="#">صفحه اصلی</a></li>
                     <li class="relative group"><a href="#">فروشگاه</a>
                         <!-- SubMenu -->
@@ -60,10 +60,10 @@
         </nav>
 
         <!-- Card & Theme & Login Link -->
-        <div class="flex items-center text-orange-200 text-xl">
+        <div class="flex items-center text-orange-200 text-xl gap-x-10 max-xl:gap-x-5 max-lg:gap-x-4">
 
             <!-- Cart Icon & Theme Switch Btn -->
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-5 max-lg:gap-x-4">
 
                 <!-- Cart -->
                 <div class="relative group">
@@ -166,13 +166,13 @@
                 </div>
             </div>
             <!-- Divide Border -->
-             <span class="w-px h-14 block bg-white/20 mx-10"></span>
+             <span class="w-px h-14 block bg-white/20"></span>
             <!-- Login Link -->
             <a href="#" class="flex items-center gap-2.5 tracking-tightest">
                 <svg class="w-8 h-8">
                     <use href="#arrow-right-on-rectangle"></use>
                 </svg>
-                <span>ورود | ثبت‌نام</span>
+                <span class="inline-block max-xl:hidden">ورود | ثبت‌نام</span>
             </a>
         </div>
         
