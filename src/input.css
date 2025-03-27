@@ -60,3 +60,32 @@ body{
     -webkit-font-feature-settings: "ss02";
     font-feature-settings: "ss02";
 }
+
+@layer components {
+    .submenu{
+        @apply hidden flex-col gap-y-3 pr-8 pb-2 mt-3 text-sm text-zinc-600 dark:text-white
+    }
+    .submenu-open{
+        @apply flex
+    }
+    .submenu-item-active{
+        /* @apply relative text-orange-300 pr-2.5 */
+        /* or */
+        position: relative;
+        color: #fdba74;
+        padding-right: 10px;
+    }
+    .submenu-item-active::after{
+        content: '';
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 100px;
+        background-color: #fdba74;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
