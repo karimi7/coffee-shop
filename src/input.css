@@ -26,8 +26,9 @@
 @import "tailwindcss";
 
 @utility container {
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    @apply lg:px-[0.625rem]
 }
 
 @theme {
@@ -44,6 +45,7 @@
     --font-MorabbaMedium: 'Morabba Medium';
     --font-MorabbaBold: 'Morabba Bold';
     --tracking-tightest: -0.065em;
+    --breakpoint-2xl: initial;
 }
 
 body{
