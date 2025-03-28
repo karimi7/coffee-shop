@@ -46,12 +46,7 @@
     --font-MorabbaBold: 'Morabba Bold';
     --tracking-tightest: -0.065em;
     --breakpoint-2xl: initial;
-}
-
-body{
-    background-image: url('/public/CoffeeShop-Files/headerBgDesktop.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    --breakpoint-xs: 480px;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -89,5 +84,21 @@ body{
         top: 0;
         bottom: 0;
         margin: auto;
+    }
+
+    .circle-main{
+        @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4
+    }
+    .circle{
+        @apply hidden md:flex justify-center items-center border rounded-full
+    }
+    .circle-lg{
+        @apply  w-[203px] h-[203px] border-white/25
+    }
+    .circle-md{
+        @apply  w-[145px] h-[145px] border-white/50
+    }
+    .circle-sm{
+        @apply  w-[95px] h-[95px] border-white/80
     }
 }

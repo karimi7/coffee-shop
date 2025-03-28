@@ -7,7 +7,7 @@
     <link rel="icon" href="./CoffeeShop-Files/svgs/logo.svg" type="image/png">
     <link rel="stylesheet" href="./styles/app.css">
 </head>
-<body class="font-Dana bg-gray-100 dark:bg-zinc-800 ss02">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800 ss02 h-500">
 
     <!-- All Apps Icons -->
     <svg class="hidden">
@@ -144,11 +144,14 @@
         <symbol id="phone-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
           </symbol>
+        <symbol id="curve" width="100" height="22" veiwBox="0 0 100 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z"/>
+          </symbol>
     </svg>
 
 
     <!-- App Header -->
-    <header class="bg-black/50 w-[90%] max-lg:w-[98%] h-24 mx-auto rounded-3xl fixed top-9 right-0 left-0 flex max-md:hidden items-center px-10 max-lg:px-5 py-5 backdrop-blur-[6px]">
+    <header class="bg-black/50 w-[90%] max-lg:w-[98%] h-24 mx-auto rounded-3xl fixed top-9 right-0 left-0 flex max-md:hidden items-center px-10 max-lg:px-5 py-5 backdrop-blur-[6px] z-50">
 
         <div class="w-full flex justify-between">
                     <!-- Logo & Menu -->
@@ -442,7 +445,7 @@
         </div>
 
         <!-- Cart -->
-        <div id="cart-icon" class="fixed flex flex-col top-0 bottom-0 bg-white dark:bg-zinc-700 w-64 -left-65 pt-5 pb-8 px-4 min-h-screen z-20 transition-all duration-150">
+        <div id="cart-icon" class="fixed flex flex-col top-0 bottom-0 bg-white dark:bg-zinc-700 w-64 -left-65 pt-5 pb-8 px-4 min-h-screen z-20 transition-all duration-150 overflow-y-scroll">
 
             <!-- Cart Header -->
             <div class="flex items-center justify-between text-orange-300 pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10">
@@ -505,6 +508,39 @@
 
     
     <!-- App Main -->
+     <main>
+        <section class="relative home h-50 xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-[url(../CoffeeShop-Files/headerBgMobile.webp)] md:bg-[url(../CoffeeShop-Files/headerBgDesktop.webp)] bg-no-repeat bg-cover bg-[center_top] xl:h-170">
+            
+            <div class="container relative overflow-y-hidden h-full md:min-h-screen flex justify-end items-center">
+                <div class="text-white">
+                    <h2 class="font-MorabbaBold text-2xl md:text-6xl/[62px] mb-0.5 md:mb-2">قهوه عربیکا تانزانیا</h2>
+                    <span class="font-MorabbaLight text-xl md:text-5xl/[64px]">یک فنجان بالانس!</span>
+                    <span class="w-25 h-px md:h-0.5 bg-orange-300 block my-3 md:my-8"></span>
+                    <p class="font-Dana text-xs md:text-2xl max-w-[201px] md:max-w-115">قطعا نام آشنای عربیکا را شنیده‌اید، عربیکا یکی از گونه‌های قهوه است که در نواحی مختلف کمربند قهوه کشت می‌شود.</p>
+                </div>
+
+                <!-- Circle -->
+                <div class="circle circle-main circle-lg">
+                    <div class="circle circle-md">
+                        <div class="circle circle-sm"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curve -->
+            <svg class="absolute bottom-0 left-0 right-0 mx-auto text-gray-100 dark:text-zinc-800 w-25 h-5.5">
+                <use href="#curve"></use>
+            </svg>
+
+            <!-- Arrow Circle -->
+             <div class="absolute flex justify-center items-center bottom-0 right-0 left-0 mx-auto translate-y-2/4 w-7.5 h-7.5 rounded-full border-[2px] border-orange-300">
+                <svg class="w-4 h-4 -rotate-90 text-zinc-700 dark:text-white">
+                    <use href="#chevron-left"></use>
+                </svg>
+             </div>
+            
+        </section>
+     </main>
 
     
     <div id="darkbg" class="hidden fixed inset-0 w-full h-full bg-black/40 z-10 transition-all duration-150"></div>
