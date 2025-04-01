@@ -101,6 +101,11 @@
     .circle-sm{
         @apply  w-[95px] h-[95px] border-white/80
     }
+
+    .swiper-button-prev-custom ,
+    .swiper-button-next-custom{
+        @apply flex items-center justify-center w-10 h-10 rounded-full shadow-normal bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 transition-all
+    }
 }
 
 @media screen and (min-width: 1024px) {
