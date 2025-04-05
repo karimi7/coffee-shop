@@ -23,6 +23,10 @@
     src: url('/public/fonts/morabba/Morabba-Bold.woff2') format('woff2');
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @import "tailwindcss";
 
 @utility container {
