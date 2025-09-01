@@ -4,7 +4,7 @@
     "tailwindcss": "^4.0.8"
   },
   "scripts": {
-    "build" : "npx @tailwindcss/cli -i ./src/input.css -o ./public/styles/app.css --watch"
+    "build" : "npx @tailwindcss/cli -i ./src/input.css -o ./public/styles/app.css"
     , "vercel-build": "chmod +x ./node_modules/.bin/tailwindcss && npm run build"
   }
 }
