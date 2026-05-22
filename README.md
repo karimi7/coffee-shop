@@ -3,4 +3,5 @@
 npm install tailwindcss @tailwindcss/cli
 
 npm i
+
 npm run build
